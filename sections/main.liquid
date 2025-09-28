@@ -1,0 +1,30 @@
+<div class="hero-bg" style="background-image: url('{{ 'hero-bg.png' | asset_url }}');">
+  <nav class="nav-minimal">
+    <a href="#home">HOME</a>
+    <a href="#apparel">APPAREL</a>
+    <a href="#accessories">ACCESSORIES</a>
+    <a href="#lifestyle">LIFESTYLE</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+  <main class="hero-content">
+    <h1 class="brand-title">BLACK RABBIT</h1>
+    <h2 class="brand-tagline">Forge Your Edge</h2>
+    <p class="brand-desc">
+      The luxury minimalist lifestyle destination for men who demand more. Launching soon.
+    </p>
+    <a href="#notify" class="cta-btn">BECOME A MEMBER</a>
+  </main>
+</div>
+
+{% schema %}
+{
+  "name": "Main Content",
+  "type": "static",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Main Content"
+    }
+  ]
+}
+{% endschema %}

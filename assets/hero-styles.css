@@ -64,13 +64,13 @@ html, body {
 .hero-section {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background-color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  padding: 5px 0 0 0;
+  padding: 0;
   overflow: hidden;
 }
 
@@ -81,7 +81,7 @@ html, body {
   right: 0;
   bottom: 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   z-index: 1;
 }
@@ -90,9 +90,8 @@ html, body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: top center;
   display: block;
-  max-height: 100vh;
 }
 
 /* Hero text styles */
@@ -166,23 +165,13 @@ html, body {
 /* Desktop styles */
 @media screen and (min-width: 768px) {
   .hero-section {
-    padding: 10px 75px 0 75px;
+    padding: 5px 0 0 0;
   }
   
   .hero-image-container {
-    left: 75px;
-    right: 75px;
-  }
-  
-  .main-nav {
-    right: 75px;
-  }
-}
-
-/* Desktop styles */
-@media screen and (min-width: 768px) {
-  .hero-section {
-    padding: 2rem;
+    left: 0;
+    right: 0;
+    top: 0;
   }
   
   .hero-text-container {
@@ -199,6 +188,10 @@ html, body {
   
   .cta-button {
     padding: 1.2rem 3rem;
+  }
+  
+  .main-nav {
+    right: 2rem;
   }
 }
 

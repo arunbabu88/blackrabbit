@@ -4,6 +4,7 @@
   width: 100%;
   height: 200vh;
   background-color: #000;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .hero-image-container {
@@ -19,17 +20,19 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: left top; /* Changed to left top to ensure text is visible */
   display: block;
   will-change: transform;
-  transition: transform 0.3s ease;
-  transform: scale(1.2); /* 20% zoom out for desktop */
+  transition: all 0.3s ease;
+  transform: scale(1.15); /* Reduced zoom to 15% for better visibility */
+  transform-origin: top left; /* Ensures scaling from top left corner */
 }
 
 /* Mobile styles */
 @media screen and (max-width: 768px) {
   .hero-image {
-    transform: scale(1.1); /* 10% zoom out for mobile */
+    transform: scale(1.08); /* Reduced zoom to 8% for mobile */
+    object-position: 5% top; /* Slight adjustment for mobile view */
   }
 }
 

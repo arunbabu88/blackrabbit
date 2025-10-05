@@ -2,30 +2,32 @@
 .hero-section {
   position: relative;
   width: 100%;
-  height: 200vh;
+  min-height: 100vh;
   background-color: #000;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow: hidden;
 }
 
 .hero-image-container {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100vh;
   overflow: hidden;
   background-color: #000;
+  z-index: 1;
 }
 
 .hero-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: left top; /* Changed to left top to ensure text is visible */
+  object-position: left top;
   display: block;
   will-change: transform;
   transition: all 0.3s ease;
-  transform: scale(1.15); /* Reduced zoom to 15% for better visibility */
-  transform-origin: top left; /* Ensures scaling from top left corner */
+  transform: scale(1.3); /* Increased zoom to 30% */
+  transform-origin: top left;
 }
 
 /* Mobile styles */

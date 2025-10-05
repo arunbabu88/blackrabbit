@@ -1,0 +1,78 @@
+{% schema %}
+{
+  "name": "Footer",
+  "settings": [
+    {
+      "type": "text",
+      "id": "company_name",
+      "label": "Company Name",
+      "default": "Black Rabbit"
+    },
+    {
+      "type": "richtext",
+      "id": "about_text",
+      "label": "About Text",
+      "default": "<p>Black Rabbit is your premium destination for distinctive clothing and accessories that define modern edge and sophistication.</p>"
+    },
+    {
+      "type": "text",
+      "id": "contact_email",
+      "label": "Contact Email",
+      "default": "info@blackrabbit.com"
+    },
+    {
+      "type": "text",
+      "id": "contact_phone",
+      "label": "Contact Phone",
+      "default": "+1 (555) 123-4567"
+    }
+  ]
+}
+{% endschema %}
+
+<link rel="stylesheet" href="{{ 'footer-styles.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>{{ section.settings.company_name }}</h3>
+      {{ section.settings.about_text }}
+      <div class="social-links">
+        <a href="#" aria-label="Facebook">📱</a>
+        <a href="#" aria-label="Instagram">📸</a>
+        <a href="#" aria-label="Twitter">🐦</a>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul class="footer-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact Info</h3>
+      <ul class="footer-links">
+        <li>Email: {{ section.settings.contact_email }}</li>
+        <li>Phone: {{ section.settings.contact_phone }}</li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Newsletter</h3>
+      <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+      <form action="#" method="post" class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; {{ 'now' | date: "%Y" }} {{ section.settings.company_name }}. All rights reserved.</p>
+  </div>
+</footer>

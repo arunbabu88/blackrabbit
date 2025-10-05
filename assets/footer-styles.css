@@ -4,6 +4,8 @@
   padding: 4rem 0;
   position: relative;
   z-index: 2;
+  margin-top: auto;
+  width: 100%;
 }
 
 .footer-content {

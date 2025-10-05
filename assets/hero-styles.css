@@ -105,22 +105,23 @@
   padding: 0 40px;
   pointer-events: none;
   right: 0;
-  top: 40%;
-  transform: translateY(-50%);
+  bottom: 15%;
+  transform: translateY(0);
 }
 
 .hero-heading {
-  font-size: 4rem;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: bold;
 }
 
 .hero-subtext {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
   font-weight: 300;
+  opacity: 0.9;
 }
 
 .cta-button {

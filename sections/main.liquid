@@ -1,0 +1,70 @@
+<div class="hero-bg">
+  <div class="hero-image-container">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0585/5261/4994/files/Hero_BR_Final.PNG?v=1696439544"
+      alt="Black Rabbit Hero"
+      alt="Black Rabbit Hero"
+      class="hero-image"
+      loading="eager"
+    >
+  </div>
+  <main class="hero-content">
+    <h1>{{ section.settings.heading }}</h1>
+    <p>{{ section.settings.subheading }}</p>
+    {% if section.settings.button_label != blank %}
+      <a href="{{ section.settings.button_link }}" class="cta-btn">{{ section.settings.button_label }}</a>
+    {% endif %}
+  </main>
+</div>
+
+{% schema %}
+{
+  "name": "Main Content",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "FORGE YOUR EDGE"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Driven by Rage. Defined by Style. Destined for Success."
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+      "default": "UNLEASH YOUR AMBITION"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Main Content"
+    }
+  ]
+}
+{% endschema %}
+
+{{ 'hero-styles.css' | asset_url | stylesheet_tag }}
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+  }
+  
+  #shopify-section-main {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+</style>

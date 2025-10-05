@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+*.log
+.env
+.env.*
+assets/hero-background*
+assets/hero-bg*
+IMG_5099.PNG

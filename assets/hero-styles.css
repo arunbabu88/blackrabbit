@@ -1,4 +1,50 @@
 
+.main-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #FF0000;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #FF0000;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
 .hero-section {
   position: relative;
   width: 100%;
@@ -27,6 +73,18 @@
 
 /* Mobile styles */
 @media screen and (max-width: 768px) {
+  .main-nav {
+    padding: 1.5rem;
+  }
+  
+  .nav-links {
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+
   .hero-section {
     height: 100vh;
   }

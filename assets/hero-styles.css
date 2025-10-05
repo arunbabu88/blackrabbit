@@ -121,6 +121,12 @@
   right: 0;
   z-index: 1000;
   padding: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+.main-nav.scrolled {
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
 }
 
 @media screen and (min-width: 768px) {

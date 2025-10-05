@@ -81,17 +81,18 @@ html, body {
   right: 0;
   bottom: 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   z-index: 1;
+  width: 100%;
+  height: 100%;
 }
 
 .hero-image {
   width: 100%;
-  height: auto;
-  max-height: 100%;
-  object-fit: contain;
-  object-position: center;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
   display: block;
 }
 
@@ -105,12 +106,12 @@ html, body {
   padding: 0 20px;
   pointer-events: auto;
   left: 50%;
-  bottom: 5%;
+  bottom: 10%;
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .hero-heading {
@@ -219,13 +220,7 @@ html, body {
   }
   
   .hero-text-container {
-    bottom: 3%;
-    gap: 1.5rem;
-  }
-  
-  .hero-image {
-    height: 100%;
-    object-fit: contain;
+    bottom: 8%;
   }
   
   .hero-heading {

@@ -17,26 +17,10 @@
     <h1>{{ section.settings.heading }}</h1>
     <p>{{ section.settings.subheading }}</p>
     {% if section.settings.button_label != blank %}
-      <a href="{{ section.settings.button_link }}" class="cta-btn">{{ section.settings.button_label }}</a>
-    {% endif %}
-  </div>
-</div>
-<div class="scroll-indicator">
-  <img 
-    src="https://cdn.shopify.com/s/files/1/0585/5261/4994/files/Hero_BR_Final.png?v=1759656119"
-    alt="Black Rabbit Hero"
-    class="hero-image"
-    loading="eager"
-    fetchpriority="high"
-    style="width:100vw; height:100vh; object-fit:cover; object-position:left top;"
-  />
-  <div class="hero-content">
-    <h1>{{ section.settings.heading }}</h1>
-    <p>{{ section.settings.subheading }}</p>
-    {% if section.settings.button_label != blank %}
       <a href="{{ section.settings.button_link }}" class="cta-button">{{ section.settings.button_label }}</a>
     {% endif %}
   </div>
+  <div class="scroll-indicator"></div>
 </div>
 
 {% schema %}

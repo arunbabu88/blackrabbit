@@ -2,8 +2,8 @@
 .hero-section {
   position: relative;
   width: 100%;
-  min-height: 150vh;
-  overflow: hidden;
+  height: 200vh;
+  background-color: #000;
 }
 
 .hero-image-container {
@@ -20,7 +20,7 @@
   object-fit: cover;
   object-position: center top;
   display: block;
-  transform-origin: center top;
+  will-change: transform;
   transition: transform 0.3s ease;
 }
 

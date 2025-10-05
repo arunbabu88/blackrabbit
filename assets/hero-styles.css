@@ -70,7 +70,7 @@ html, body {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  padding: 0;
+  padding: 5px 0 0 0;
   overflow: hidden;
 }
 
@@ -110,7 +110,7 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2.5rem;
 }
 
 .hero-heading {
@@ -141,7 +141,7 @@ html, body {
 .cta-button {
   display: inline-block;
   padding: 1rem 2.5rem;
-  background-color: #ff0000;
+  background-color: #cc0000;
   color: #ffffff;
   text-decoration: none;
   border-radius: 6px;

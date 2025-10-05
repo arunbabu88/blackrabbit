@@ -1,12 +1,12 @@
 <div class="hero-bg">
   <div class="hero-image-container">
     <img
-      src="https://cdn.shopify.com/s/files/1/0585/5261/4994/files/Hero_BR_Final.png?v=1759656119"
-      srcset="https://cdn.shopify.com/s/files/1/0585/5261/4994/files/Hero_BR_Final.png?v=1759656119&width=2048 2048w,
-              https://cdn.shopify.com/s/files/1/0585/5261/4994/files/Hero_BR_Final.png?v=1759656119&width=1600 1600w,
-              https://cdn.shopify.com/s/files/1/0585/5261/4994/files/Hero_BR_Final.png?v=1759656119&width=1200 1200w,
-              https://cdn.shopify.com/s/files/1/0585/5261/4994/files/Hero_BR_Final.png?v=1759656119&width=800 800w"
-      sizes="100vw"
+        src="https://cdn.shopify.com/s/files/1/0585/5261/4994/files/Hero_BR_Final.png?v=1759656119"
+      srcset="https://cdn.shopify.com/s/files/1/0585/5261/4994/files/Hero_BR_Final.png?v=1759656119&width=2048&crop=top 2048w,
+              https://cdn.shopify.com/s/files/1/0585/5261/4994/files/Hero_BR_Final.png?v=1759656119&width=1600&crop=top 1600w,
+              https://cdn.shopify.com/s/files/1/0585/5261/4994/files/Hero_BR_Final.png?v=1759656119&width=1200&crop=top 1200w,
+              https://cdn.shopify.com/s/files/1/0585/5261/4994/files/Hero_BR_Final.png?v=1759656119&width=800&crop=top 800w"
+      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
       alt="Black Rabbit Hero"
       class="hero-image"
       loading="eager"
@@ -20,6 +20,23 @@
       <a href="{{ section.settings.button_link }}" class="cta-btn">{{ section.settings.button_label }}</a>
     {% endif %}
   </main>
+</div>
+<div class="hero-section">
+  <img 
+    src="https://cdn.shopify.com/s/files/1/0585/5261/4994/files/Hero_BR_Final.png?v=1759656119"
+    alt="Black Rabbit Hero"
+    class="hero-image"
+    loading="eager"
+    fetchpriority="high"
+    style="width:100vw; height:100vh; object-fit:cover; object-position:left top;"
+  />
+  <div class="hero-content">
+    <h1>{{ section.settings.heading }}</h1>
+    <p>{{ section.settings.subheading }}</p>
+    {% if section.settings.button_label != blank %}
+      <a href="{{ section.settings.button_link }}" class="cta-button">{{ section.settings.button_label }}</a>
+    {% endif %}
+  </div>
 </div>
 
 {% schema %}

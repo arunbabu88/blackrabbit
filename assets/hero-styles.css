@@ -5,9 +5,30 @@
   right: 60px;
   z-index: 1000;
   padding: 2rem;
+
+@media screen and (min-w/* Base styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
 }
 
-@media screen and (min-width: 768px) {
+.page-container {
+  position: relative;
+  min-height: 100vh;
+  background-color: #000;
+}
+
+/* Navigation styles */
+.main-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 2rem;
+}68px) {
   .hero-section {
     padding: 0 60px;
   }

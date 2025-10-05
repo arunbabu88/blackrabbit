@@ -99,20 +99,43 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 60px;
   box-sizing: border-box;
+  padding: 0;
 }
 
 .hero-image-container {
   position: absolute;
   top: 0;
-  left: 60px;
-  right: 60px;
+  left: 0;
+  right: 0;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1;
+}
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    padding: 0 75px;
+  }
+  
+  .hero-image-container {
+    left: 75px;
+    right: 75px;
+  }
+  
+  .main-nav {
+    right: 75px;
+  }
 }
 
 .hero-image {

@@ -2,9 +2,35 @@
 .main-nav {
   position: fixed;
   top: 0;
-  right: 0;
+  right: 60px;
   z-index: 1000;
   padding: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    padding: 0 60px;
+  }
+  
+  .hero-image-container {
+    left: 60px;
+    right: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-nav {
+    right: 0;
+  }
+  
+  .hero-section {
+    padding: 0;
+  }
+  
+  .hero-image-container {
+    left: 0;
+    right: 0;
+  }
 }
 
 .nav-links {

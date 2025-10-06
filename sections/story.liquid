@@ -3,20 +3,27 @@
   position: relative;
   min-height: 100vh;
   background-color: #000;
-  padding-top: 5px;
+  padding-top: 80px;
   box-sizing: border-box;
+  color: #fff;
 }
 
 .story-background {
   position: fixed;
-  top: 5px;
-  left: 30px;
-  right: 30px;
+  top: 0;
+  left: 0;
+  right: 0;
   bottom: 0;
-    <div class="story-background">
-    <img
-        src="https://cdn.shopify.com/s/files/1/0585/5261/4994/files/BlackRabbit.png?v=1759767102"ndex: 1;
-  opacity: 0.3;
+      <img
+        src="https://cdn.shopify.com/s/files/1/0585/5261/4994/files/BlackRabbit.png?v=1759767102"
+        alt="Black Rabbit Background"index: 1;
+}
+
+.story-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.15;
 }
 
 .story-background img {
@@ -73,15 +80,12 @@
   color: #ff0000;
 }
 
-.story-section {
+.story-content {
   position: relative;
   z-index: 2;
-  padding: 8rem 2rem 4rem;
-  max-width: 800px;
+  padding: 50px 20px;
+  max-width: 1000px;
   margin: 0 auto;
-  color: #fff;
-  font-family: var(--font-body-family);
-  line-height: 1.6;
 }
 
 /* Responsive Styles */

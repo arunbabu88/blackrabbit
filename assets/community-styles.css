@@ -1,0 +1,187 @@
+.community-section {
+  position: relative;
+  min-height: 100vh;
+  color: #fff;
+  background-color: #000;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.community-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+
+.community-background .background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.15;
+}
+
+.community-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 20px;
+}
+
+.community-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.community-subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
+  color: #888;
+}
+
+.community-intro {
+  margin-bottom: 4rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: #FFD700;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 2rem 0;
+}
+
+.why-join, .pillars {
+  margin-bottom: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #FFD700;
+}
+
+.comparison-table {
+  border: 1px solid #333;
+  margin: 2rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-header, .table-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1px;
+  background-color: #333;
+}
+
+.table-header .col {
+  background-color: #FFD700;
+  color: #000;
+  font-weight: 700;
+}
+
+.col {
+  padding: 1rem;
+  background-color: #111;
+}
+
+.pillar {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+.pillar h3 {
+  color: #FFD700;
+  margin-bottom: 1rem;
+}
+
+.pillar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pillar li {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.cta-section {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 4rem 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+}
+
+.signup-form {
+  max-width: 500px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.signup-form input {
+  padding: 1rem;
+  border: 1px solid #333;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.signup-form input::placeholder {
+  color: #888;
+}
+
+.cta-button {
+  background-color: #FFD700;
+  color: #000;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #FFF;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .community-content {
+    padding: 80px 15px;
+  }
+
+  .community-title {
+    font-size: 2.5rem;
+  }
+
+  .community-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .table-header, .table-row {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-table .col {
+    border-bottom: 1px solid #333;
+  }
+}

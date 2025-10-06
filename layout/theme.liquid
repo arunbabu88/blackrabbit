@@ -8,10 +8,120 @@
     <link rel="canonical" href="{{ canonical_url }}">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     {{ content_for_header }}
-    {{ 'theme.css' | asset_url | stylesheet_tag }}
-    {{ 'header-styles.css' | asset_url | stylesheet_tag }}
-    {{ 'story-styles.css' | asset_url | stylesheet_tag }}
-    {{ 'community-styles.css' | asset_url | stylesheet_tag }}
+    <style>
+      .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background-color: rgba(0, 0, 0, 0.95);
+        padding: 20px 0;
+        border-bottom: 1px solid rgba(255, 215, 0, 0.1);
+      }
+      .header-container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(169, 169, 169, 0.1);
+        border-radius: 50%;
+        padding: 10px;
+        width: 60px;
+        height: 60px;
+      }
+      .logo {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      .nav-links {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 60px;
+      }
+      .nav-link {
+        color: #FFD700;
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+      }
+      .nav-link:hover {
+        color: #FFFFFF;
+      }
+      .story-section, .community-section {
+        position: relative;
+        min-height: 100vh;
+        color: #FFD700;
+        background-color: #000;
+        padding: 80px 0 0;
+        margin: 0;
+        overflow-x: hidden;
+      }
+      .story-background, .community-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        overflow: hidden;
+      }
+      .story-background img, .community-background img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.15;
+        transform: scale(1.1);
+      }
+      .story-content, .community-content {
+        position: relative;
+        z-index: 2;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+      h1, h2 {
+        color: #FFD700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      p {
+        color: rgba(255, 255, 255, 0.9);
+        line-height: 1.8;
+      }
+      .highlight {
+        color: #FFD700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      @media (max-width: 768px) {
+        .header {
+          padding: 10px 0;
+        }
+        .logo-link {
+          width: 40px;
+          height: 40px;
+        }
+        .nav-links {
+          gap: 20px;
+        }
+        .nav-link {
+          font-size: 0.8rem;
+        }
+      }
+    </style>
   </head>
   <body>
     {% section 'header' %}

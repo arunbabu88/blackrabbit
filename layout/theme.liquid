@@ -20,9 +20,9 @@
         border-bottom: 1px solid rgba(255, 215, 0, 0.1);
       }
       .header-container {
-        max-width: 1200px;
-        margin: 0;
-        padding: 0 30px;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -33,11 +33,11 @@
         align-items: center;
         justify-content: flex-start;
         padding: 5px;
-        width: 120px;
+        width: 80px;
         height: auto;
       }
       .logo {
-        width: 120px;
+        width: 80px;
         height: auto;
         object-fit: contain;
       }
@@ -92,23 +92,31 @@
         margin: 0 auto;
         padding: 50px 30px;
       }
-      h1, h2 {
+      h1 {
+        font-size: 2.2rem;
         color: #ffffff;
         text-transform: uppercase;
-        letter-spacing: 2px;
+        letter-spacing: 4px;
         font-weight: 800;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5),
                      0 0 10px rgba(255, 0, 0, 0.3);
       }
       h2 {
+        font-size: 1.5rem;
         color: #FF0000;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 800;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
       }
       p {
+        font-size: 1rem;
         color: #ffffff;
         line-height: 1.8;
         font-weight: 400;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+        opacity: 0.9;
       }
       .highlight {
         color: #FF0000;
@@ -122,13 +130,13 @@
           padding: 15px 0;
         }
         .header-container {
-          padding: 0 20px;
+          padding: 0 15px;
         }
         .logo-link {
-          width: 100px;
+          width: 70px;
         }
         .logo {
-          width: 100px;
+          width: 70px;
         }
         .nav-links {
           gap: 20px;
@@ -140,13 +148,13 @@
       
       @media (max-width: 480px) {
         .header-container {
-          padding: 0 15px;
+          padding: 0 10px;
         }
         .logo-link {
-          width: 80px;
+          width: 60px;
         }
         .logo {
-          width: 80px;
+          width: 60px;
         }
         .nav-links {
           gap: 15px;

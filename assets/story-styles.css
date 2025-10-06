@@ -70,35 +70,36 @@
 
 /* Story content elements */
 .story-section h1 {
-  font-size: 3rem;
+  font-size: 2.2rem;
   font-weight: 800;
   margin-bottom: 2rem;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   color: #ffffff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5),
                0 0 10px rgba(255, 0, 0, 0.3);
 }
 
 .story-section h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 800;
   margin-top: 3rem;
   margin-bottom: 1.5rem;
   color: #ff0000;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 .story-section p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.8;
   margin-bottom: 1.5rem;
   color: #ffffff;
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  opacity: 0.9;
 }
 
 .story-section ul {
@@ -151,12 +152,13 @@
   }
   
   .story-section h1 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     margin-bottom: 1.5rem;
+    letter-spacing: 2px;
   }
   
   .story-section h2 {
-    font-size: 1.75rem;
+    font-size: 1.2rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
   }
@@ -191,11 +193,12 @@
   }
   
   .story-section h1 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
   }
   
   .story-section h2 {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
   
   .story-section p, .story-section li {

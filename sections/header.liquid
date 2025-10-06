@@ -1,0 +1,45 @@
+<div class="header">
+  <div class="header-container">
+    <div class="logo-container">
+      <a href="/" class="logo-link">
+        <img 
+          src="{{ 'BlackRabbitLogo.png' | asset_url }}"
+          alt="Black Rabbit"
+          class="logo"
+          width="60"
+          height="60"
+        >
+      </a>
+    </div>
+    <nav class="navigation">
+      <ul class="nav-links">
+        <li><a href="/collections/all" class="nav-link">Shop</a></li>
+        <li><a href="/pages/story" class="nav-link">Story</a></li>
+        <li><a href="/pages/community" class="nav-link">Community</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Header",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
+    },
+    {
+      "type": "range",
+      "id": "logo_width",
+      "min": 40,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Logo width",
+      "default": 60
+    }
+  ]
+}
+{% endschema %}

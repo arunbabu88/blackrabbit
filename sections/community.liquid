@@ -1,15 +1,19 @@
 <div class="community-section">
   <div class="community-background">
-    <img
-        src="https://cdn.shopify.com/s/files/1/0585/5261/4994/files/BlackRabbit.png?v=1759767102"
-        alt="Black Rabbit Background"
-        class="background-image"
-    >
+    {%- if section.settings.background_image -%}
+      {{ section.settings.background_image | image_url | img_tag: 'Background Image', 'background-image' }}
+    {%- else -%}
+      <img
+          src="https://cdn.shopify.com/s/files/1/0585/5261/4994/files/BlackRabbit.png?v=1759767102"
+          alt="Black Rabbit Background"
+          class="background-image"
+      >
+    {%- endif -%}
   </div>
 
   <div class="community-content">
-    <h1 class="community-title">THE APEX ALLIANCE: Your Inner Circle</h1>
-    <p class="community-subtitle">The work is solitary, but the victory is shared.</p>
+    <h1 class="community-title">{{ section.settings.title | default: "THE APEX ALLIANCE: Your Inner Circle" }}</h1>
+    <p class="community-subtitle">{{ section.settings.subtitle | default: "The work is solitary, but the victory is shared." }}</p>
 
     <div class="community-intro">
       <p>You didn't reach this point by following the crowd. You forged your own path, fueled by a deep, quiet ambition. Black Rabbit.club is not just a brand; it's an alliance built for that specific drive. We are the inner circle of the relentless—a community where mastery is the only currency that matters.</p>
@@ -87,6 +91,30 @@
 {% schema %}
 {
   "name": "Community Section",
-  "settings": []
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "THE APEX ALLIANCE: Your Inner Circle"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "The work is solitary, but the victory is shared."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Community Section",
+      "category": "Custom Sections"
+    }
+  ]
 }
 {% endschema %}

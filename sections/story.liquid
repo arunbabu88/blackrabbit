@@ -1,6 +1,77 @@
 {%- style -%}
+.story-wrapper {
+  position: relative;
+  min-height: 100vh;
+  background-color: #000;
+}
+
+.story-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0.3;
+}
+
+.story-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.story-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+.story-nav {
+  z-index: 1000;
+}
+
+.story-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.story-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.story-nav a:hover {
+  color: #ff0000;
+}
+
 .story-section {
-  padding: 4rem 2rem;
+  position: relative;
+  z-index: 2;
+  padding: 8rem 2rem 4rem;
   max-width: 800px;
   margin: 0 auto;
   color: #fff;
@@ -66,8 +137,28 @@
 }
 {%- endstyle -%}
 
-<div class="story-section">
-  <h1>The Story: FORGE YOUR EDGE</h1>
+<div class="story-wrapper">
+  <div class="story-background">
+    <img
+      src="https://cdn.shopify.com/s/files/1/0585/5261/4994/files/HeroRabbit.png?v=1759661893"
+      alt="Black Rabbit Background"
+      loading="eager"
+    >
+  </div>
+  
+  <header class="story-header">
+    <a href="/" class="brand-logo">BLACK RABBIT™</a>
+    <nav class="story-nav">
+      <ul>
+        <li><a href="/pages/story">Story</a></li>
+        <li><a href="/collections/all">Products</a></li>
+        <li><a href="/pages/community">Community</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="story-section">
+    <h1>The Story: FORGE YOUR EDGE</h1>
   
   <h2>The Mark of the Catalyst</h2>
   <p>We all reach a point where the momentum of the past no longer serves the promise of the future. The success is real, the comfort is there, yet a voice whispers beneath the veneer of the ordinary: Is this it? This moment—this quiet, uncompromising sense of unfinished business—is not a crisis. It is the beginning of the second chapter.</p>

@@ -28,10 +28,9 @@
 
 .logo {
   display: block;
-  width: 120px;
+  width: 100px;
   height: auto;
   object-fit: contain;
-  filter: brightness(0) invert(1);
 }
 
 .navigation {

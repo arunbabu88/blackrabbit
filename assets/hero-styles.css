@@ -138,20 +138,20 @@ html, body {
   padding: 0 20px;
   pointer-events: auto;
   left: 50%;
-  bottom: 5%;
+  bottom: 8%;
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2.5rem;
+  gap: 3rem;
 }
 
 .hero-heading {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   letter-spacing: 4px;
   font-weight: 800;
-  margin: 0;
+  margin: 1rem 0 0 0;
   order: 2;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5),
                0 0 10px rgba(255, 0, 0, 0.3);
@@ -159,41 +159,41 @@ html, body {
 }
 
 .hero-subtext {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 400;
-  margin: 0;
+  margin: 0.5rem 0 0 0;
   order: 3;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4),
                0 0 8px rgba(255, 0, 0, 0.2);
   letter-spacing: 2px;
   color: #ffffff;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 /* Button styles */
 .cta-button {
   display: inline-block;
-  padding: 1rem 2.5rem;
+  padding: 1.2rem 3rem;
   background-color: #cc0000;
   color: #ffffff;
   text-decoration: none;
   border-radius: 6px;
   text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.8px;
   transition: all 0.3s ease;
   pointer-events: auto;
   border: 2px solid #ff0000;
   box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
-  transform: translateY(40px);
   order: 1;
+  margin-bottom: 1rem;
 }
 
 .cta-button:hover {
   background-color: #e60000;
   border-color: #e60000;
   box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
-  transform: translateY(38px);
+  transform: translateY(-2px);
 }
 
 /* Desktop styles */
